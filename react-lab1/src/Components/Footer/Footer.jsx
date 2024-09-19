@@ -1,4 +1,8 @@
 import React, {Component} from 'react';
+import './Footer.css';
+import image1 from './image/facebook.svg';
+import image2 from './image/instagram.svg';
+import image3 from './image/twitter.svg';
 
 class Footer extends Component{
     render(){
@@ -16,13 +20,12 @@ class Footer extends Component{
               </div>
             </div>
             <div className="block-footer3">
-              {/* Дополнительный контент футера */}
               <div className="block-contact">
                 <p>© Learnico by Your Name</p>
                 <div className="img-contact">
-                  <img src="../general/image/facebook.svg" alt="facebook" />
-                  <img src="../general/image/twitter.svg" alt="twitter" />
-                  <img src="../general/image/instagram.svg" alt="instagram" />
+                  <img src={image1} alt="facebook" />
+                  <img src={image3} alt="twitter" />
+                  <img src={image2} alt="instagram" />
                 </div>
               </div>
             </div>

@@ -1,7 +1,12 @@
+.text-trending{
+    padding: 5px 10px;
+    border: 0.5px solid #FCD8CA;
+    border-radius: 6px;
+    background-color: #FCD8CA;
+}
 .img-trending {
     position: relative; 
     width: 100%; 
-    border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
     overflow: hidden; 
@@ -27,6 +32,7 @@
     justify-content: space-between;
     width: 70%; 
     color: #FFFFFF;
+    gap: 20px;
 }
 
 .text-block-pc {
@@ -54,25 +60,29 @@
 .text-img-pc1 {
     color: #1F2937;
     font-size: 0.875em;
+    margin: 0;
 }
 
 .text-img-pc2 {
     font-size: 1.5em;
     line-height: 1.46em;
+    margin: 0;
 }
 
 .text-img-pc3 {
     font-size: 1.125em;
+    margin: 0;
 }
 
 .text-img-pc4 {
     font-size: 1em;
+    margin: 0;
 }
 
 
 .img-pc img {
     display: block;
-    max-width: 100%; /* Ensure the image does not exceed container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
 }
 
