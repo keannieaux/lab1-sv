@@ -3,6 +3,7 @@ import Header from './Components/Header/Header';
 import MainContent from './Components/MainComponent/MainContent';
 import Footer from './Components/Footer/Footer';
 import IntroBlock from './Components/IntroductionBlock/IntroBlock';
+import PremiumBlock from './Components/PremiumBlock/PremiumBlock';
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <IntroBlock/>
+        <PremiumBlock/>
         <MainContent />
         <Footer />
       </div>
