@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Include other imports as necessary
+import { Link } from 'react-router-dom'; // Make sure to keep the Link import
 import './Header.css';
 import cartIcon from './image/shopping_cart.svg';
 import searchIcon from './image/search.svg';
@@ -16,8 +15,9 @@ function Header() {
                     <nav className="header-nav">
                         <Link to="/" className="dm-sansFont text-a">Home</Link>
                         <Link to="/about" className="dm-sansFont text-a">About</Link>
+                        <Link to="/blog" className="dm-sansFont text-a">Blog</Link>
+                        <Link to="/contact" className="dm-sansFont text-a">Contact</Link>
                         <Link to="/courses" className="dm-sansFont text-a">Courses</Link>
-                        <Link to="/reviews" className="dm-sansFont text-a">Reviews</Link> {/* Add Reviews link */}
                         <div className="search">
                             <img src={searchIcon} alt="search" />
                             <p className="dm-sansFont text-search">Search</p>
