@@ -55,3 +55,54 @@
     font-size: 2em;
     margin: 0;
 }
+@media(max-width: 1820px){
+    .header-nav{
+        align-content: center;
+    justify-content: center;
+    }
+
+}
+@media(max-width: 1440px){
+    .header-nav{
+        align-content: center;
+    justify-content: center;
+    }
+}
+@media(max-width: 768px){
+    .shopping_cart{
+        margin: 0;
+        gap: 13%;
+      }
+    .search p{
+        color: #333;
+      }
+    .header-nav {
+        display: none;
+      }
+      .header-block2{
+        display: none;
+      }
+      .header-block1 {
+        position: fixed;
+        top: 50px;
+        right: -250px;
+        width: 250px;
+        height: 90%;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        transition: right 0.3s ease-in-out;
+        z-index: 1;
+        overflow-y: scroll;
+      }
+      .header-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .header-nav a{
+        margin: 10px 0;
+        text-decoration: none;
+        color: #333;
+      }
+}
+

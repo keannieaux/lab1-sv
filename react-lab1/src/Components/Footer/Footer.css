@@ -60,3 +60,26 @@ footer p{
     display: flex;
     gap: 10px;
 }
+@media(max-width: 1440px){
+    .block-footer1{
+        justify-content: center;
+      }
+}
+@media (max-width: 900px) {
+    .block-footer3{
+        padding-right: 0px;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .button-pole{
+        flex-wrap: wrap;
+    }
+    .block-contact{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 550px){
+    .block-footer2{
+        width: 100%;
+    }
+}

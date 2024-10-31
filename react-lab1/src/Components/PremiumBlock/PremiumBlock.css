@@ -53,3 +53,36 @@
     color:#111827;
     font-size: 1em;
 }
+@media(max-width: 1440px){
+    .block-premium1{
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+      }
+}
+@media (max-width: 900px) {
+    #wo{
+        width: 90%;
+    }
+    .block-premium2{
+        width: 80%;
+    }
+    .block-premium1{
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media(max-width: 550px){
+    .text-block-premium2{
+        font-size: 1em;
+    }
+    .text-block-premium1{
+        font-size: 2.5em;
+    }
+    .button-premium{
+        flex-wrap: wrap;
+    }
+    .button-premium2{
+        display: none;
+    }
+}

@@ -1,12 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import './PremiumBlock.css';
 import womanIcon from './image/woman.svg';
 import chevronIcon from './image/chevron_right.svg';
 
-class PremiumBlock extends Component{
-    render(){
-        return(
-            <div className="block-premium">
+function PremiumBlock () {
+    return (
+        <div className="block-premium">
             <div className="block-premium1">
                 <img src={womanIcon} alt="woman" id="wo" />
                 <div className="block-premium2">
@@ -24,8 +23,7 @@ class PremiumBlock extends Component{
                 </div>
             </div>
         </div>
-        );
-    }
-}
+    );
+};
 
 export default PremiumBlock;

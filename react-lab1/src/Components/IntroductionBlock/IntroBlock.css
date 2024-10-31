@@ -67,3 +67,37 @@
     display:flex;
     gap: 7px;
 }
+@media(max-width: 1820px){
+    .main-block{
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 900px) {
+    .text-main-premium1{
+        text-align: center;
+    }
+    .main-premium1{
+        padding: 90px 150px;
+    }
+    #fam{
+        width: 100%;
+    }
+}
+@media(max-width: 550px){
+    .main-block4{
+        flex-wrap: wrap;
+    }
+    .main-button2{
+        display: none;
+    }
+    .main-text2{
+        font-size: 1em;
+    }
+    .main-text1{
+        font-size: 2.5em;
+    }
+    .main-block3{
+        flex-wrap: wrap;
+    }
+}

@@ -1,21 +1,27 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
-import MainContent from './Components/MainComponent/MainContent';
 import Footer from './Components/Footer/Footer';
-import IntroBlock from './Components/IntroductionBlock/IntroBlock';
-import PremiumBlock from './Components/PremiumBlock/PremiumBlock';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Courses from './Components/Courses/Courses';
+import Reviews from './Components/Reviews/Reviews'; // Import the Reviews component
 
-
-class App extends Component {
-  render(){
+class App extends React.Component {
+  render() {
     return (
-      <div className="App">
-        <Header />
-        <IntroBlock/>
-        <PremiumBlock/>
-        <MainContent />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/reviews" element={<Reviews />} /> {/* Add Reviews route */}
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

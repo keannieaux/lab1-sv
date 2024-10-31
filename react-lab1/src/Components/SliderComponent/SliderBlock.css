@@ -85,4 +85,36 @@
     max-width: 100%; 
     height: auto; 
 }
-
+@media (max-width: 900px) {
+    .img-trending{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button-img-pc1{
+        width: 80%;
+    }
+    .button-img-pc{
+        width: 50%;
+    }
+}
+@media(max-width: 550px){
+    .text-img-pc4 {
+        font-size: 0.8em;
+    }
+    .button-img-pc{
+        width: 100%;
+    }
+    .button-img-pc1{
+        width: 140%;
+    }
+    .text-block-pc p{
+        font-size: 0.8em;
+    }
+}
+@media(max-width: 768px){
+    .shopping_cart{
+        margin: 0;
+        gap: 13%;
+      }
+}
