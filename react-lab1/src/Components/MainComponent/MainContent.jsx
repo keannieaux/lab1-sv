@@ -3,7 +3,7 @@ import SliderBlock from '../SliderComponent/SliderBlock';
 import './MainContent.css';
 import sliderData from '../../data/data.json'; // Adjusted path to your JSON file
 
-const MainContent = () => {
+function MainContent () {
     return (
         <main>
             <div className="block-trending">

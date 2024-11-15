@@ -1,17 +1,18 @@
 import React from 'react';
-import './Reviews.css'; // Optional: Create a CSS file for styling
+import './Reviews.css'; 
 
-const Reviews = () => {
+function Reviews ({ image, author, job }) {
   return (
-    <div className="reviews">
-      <h1>User Reviews</h1>
-      <p>Here's what our users have to say:</p>
-      <ul>
-        <li>"This is the best platform for learning!" - User A</li>
-        <li>"I found exactly what I needed." - User B</li>
-        <li>"Highly recommend the courses offered here." - User C</li>
-      </ul>
+    <div className="block-testimonials4">
+    <p className="dm-sansFont text-browse2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+    <div className="block-testimonials6">
+        <img src={image} alt="woman1" />
+        <div className="block-text-testimonials">
+            <p className="dm-sansFont text-testimonials1">{author}</p>
+            <p className="dm-sansFont text-testimonials2">{job}</p>
+        </div>
     </div>
+</div>
   );
 };
 

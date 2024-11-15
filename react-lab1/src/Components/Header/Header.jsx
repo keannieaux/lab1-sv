@@ -15,8 +15,7 @@ function Header() {
                     <nav className="header-nav">
                         <Link to="/" className="dm-sansFont text-a">Home</Link>
                         <Link to="/about" className="dm-sansFont text-a">About</Link>
-                        <Link to="/blog" className="dm-sansFont text-a">Blog</Link>
-                        <Link to="/contact" className="dm-sansFont text-a">Contact</Link>
+                        <Link to="/Reviews" className="dm-sansFont text-a">Reviews</Link>
                         <Link to="/courses" className="dm-sansFont text-a">Courses</Link>
                         <div className="search">
                             <img src={searchIcon} alt="search" />

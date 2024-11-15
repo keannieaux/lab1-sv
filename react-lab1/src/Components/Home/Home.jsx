@@ -1,7 +1,7 @@
 import React from 'react';
-import IntroBlock from '../IntroductionBlock/IntroBlock'; // Adjust the path based on your structure
-import PremiumBlock from '../PremiumBlock/PremiumBlock'; // Adjust the path based on your structure
-import MainContent from '../MainComponent/MainContent'; // Adjust the path based on your structure
+import IntroBlock from '../IntroductionBlock/IntroBlock'; 
+import PremiumBlock from '../PremiumBlock/PremiumBlock'; 
+import MainContent from '../MainComponent/MainContent'; 
 
 const Home = () => {
     return (

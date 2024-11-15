@@ -22,29 +22,5 @@
         "courseTitle": "React Mastery",
         "price": "$ 49.00 USD",
         "buttonText": "Get Started"
-    },
-    {
-        "id": 4,
-        "image": "/assets/pc3.svg",
-        "beginnerLevel": "Advanced",
-        "courseTitle": "React Mastery",
-        "price": "$ 49.00 USD",
-        "buttonText": "Get Started"
-    },
-    {
-        "id": 5,
-        "image": "/assets/pc3.svg",
-        "beginnerLevel": "Advanced",
-        "courseTitle": "React Mastery",
-        "price": "$ 49.00 USD",
-        "buttonText": "Get Started"
-    },
-    {
-        "id": 6,
-        "image": "/assets/pc3.svg",
-        "beginnerLevel": "Advanced",
-        "courseTitle": "React Mastery",
-        "price": "$ 49.00 USD",
-        "buttonText": "Get Started"
     }
 ]

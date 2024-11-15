@@ -5,19 +5,19 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Courses from './Components/Courses/Courses';
-import Reviews from './Components/Reviews/Reviews'; // Import the Reviews component
+import Reviews from './Components/Reviews/ReviewsComponent';
 
 class App extends React.Component {
   render() {
     return (
       <Router>
+                  <Header />
         <div className="App">
-          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/courses" element={<Courses />} />
-            <Route path="/reviews" element={<Reviews />} /> {/* Add Reviews route */}
+            <Route path="/reviews" element={<Reviews />} /> 
           </Routes>
           <Footer />
         </div>
