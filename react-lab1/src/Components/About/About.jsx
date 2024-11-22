@@ -10,12 +10,17 @@ const About = () => {
   const handleShow = () => setShow(true);
   return (
     <div className="about">
-        <ProgressBar now={60} />
-       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+      <div className="progres">
+        <p>Прогресс</p>
+      <ProgressBar now={60} />
+      <div>
+      <Button variant="primary" onClick={handleShow}>
+        Узнать больше о прогрессе
       </Button>
+      </div>
+      </div>
       <Alert variant="danger">
-    This is a danger alert—check it out!
+    Не забывайте о курсе!
   </Alert>
       <h1> About <Badge variant="secondary">Us</Badge></h1>
       <p>
@@ -40,6 +45,7 @@ const About = () => {
                     </Card.Body>
                 </Card>
                 <Form>
+                  <h1>Заполните данные для регистрации на курс</h1>
     <Form.Group controlId="formBasicEmail">
       <Form.Label>Email address</Form.Label>
       <Form.Control type="email" placeholder="Enter email" />
@@ -63,15 +69,12 @@ const About = () => {
   </ListGroup>
   <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Прогресс</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>Достигните прогресса вместе с нашим курсом!</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>

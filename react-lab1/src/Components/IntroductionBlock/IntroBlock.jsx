@@ -15,7 +15,7 @@ function IntroBlock () {
                     </div>
                     <div className="main-block3">
                         <div id="knopka-cours">
-                            <p><Button variant="primary" className="dm-sansFont button-text1" id="ex">Explore Courses</Button></p>
+                            <Button variant="primary" style={{ backgroundColor: '#198754', border: 'none' }} className="dm-sansFont button-text2" id="ex">Explore Courses</Button>
                         </div>
                         <div className="main-button2">
                             <p className="dm-sansFont button-text1" id="wat">Watch Video</p>

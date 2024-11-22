@@ -12,7 +12,7 @@ function Header() {
                     <span></span><span></span><span></span>
                 </div>
                 <div className="header-block1">
-                <Navbar bg="dark" variant="dark" expand="lg" className="header-nav">
+                <Navbar expand="lg" className="header-nav">
       <Navbar.Brand href="#home"><Link to="/" className="dm-sansFont text-a">Home</Link></Navbar.Brand>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
