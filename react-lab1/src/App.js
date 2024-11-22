@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Courses from './Components/Courses/Courses';
 import Reviews from './Components/Reviews/ReviewsComponent';
+import NotFound from './Components/NotFound/notfound';
 
 class App extends React.Component {
   render() {
@@ -17,7 +18,8 @@ class App extends React.Component {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/courses" element={<Courses />} />
-            <Route path="/reviews" element={<Reviews />} /> 
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="*" element={<NotFound />} /> 
           </Routes>
           <Footer />
         </div>
