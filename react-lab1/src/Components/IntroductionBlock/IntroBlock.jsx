@@ -2,6 +2,7 @@ import React from "react";
 import playIcon from "./image/play.svg";
 import familyIcon from "./image/family.svg";
 import './IntroBlock.css';
+import { Button } from 'react-bootstrap';
 
 function IntroBlock () {
     return (
@@ -13,8 +14,8 @@ function IntroBlock () {
                         <p className="dm-sansFont main-text2" id="lor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel molestie magna curabitur tincidunt nunc sit amet.</p>
                     </div>
                     <div className="main-block3">
-                        <div className="main-button1 user-only" id="knopka-cours">
-                            <p className="dm-sansFont button-text1" id="ex">Explore Courses</p>
+                        <div id="knopka-cours">
+                            <p><Button variant="primary" className="dm-sansFont button-text1" id="ex">Explore Courses</Button></p>
                         </div>
                         <div className="main-button2">
                             <p className="dm-sansFont button-text1" id="wat">Watch Video</p>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Make sure to keep the Link import
+import { Link } from 'react-router-dom'; 
 import './Header.css';
-import cartIcon from './image/shopping_cart.svg';
-import searchIcon from './image/search.svg';
+import { Navbar, Nav, } from 'react-bootstrap';
+import Dropdown from '../Dopdown/dropdown'
 
 function Header() {
     return (
@@ -12,26 +12,16 @@ function Header() {
                     <span></span><span></span><span></span>
                 </div>
                 <div className="header-block1">
-                    <nav className="header-nav">
-                        <Link to="/" className="dm-sansFont text-a">Home</Link>
-                        <Link to="/about" className="dm-sansFont text-a">About</Link>
-                        <Link to="/Reviews" className="dm-sansFont text-a">Reviews</Link>
-                        <Link to="/courses" className="dm-sansFont text-a">Courses</Link>
-                        <div className="search">
-                            <img src={searchIcon} alt="search" />
-                            <p className="dm-sansFont text-search">Search</p>
-                        </div>
-                        <div className="shopping_cart">
-                            <img src={cartIcon} alt="shopping_cart" />
-                            <p className="dm-sansFont text-shopping-cart">Cart</p>
-                        </div>
-                        <div className="block-sign">
-                            <p className="dm-sansFont text-sign">Sign Up</p>
-                        </div>
-                        <div className="block-sign">
-                            <p className="dm-sansFont text-sign">Log In</p>
-                        </div>
-                    </nav>
+                <Navbar bg="dark" variant="dark" expand="lg" className="header-nav">
+      <Navbar.Brand href="#home"><Link to="/" className="dm-sansFont text-a">Home</Link></Navbar.Brand>
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#about"><Link to="/about" className="dm-sansFont text-a">About</Link></Nav.Link>
+          <Nav.Link href="#contact"><Link to="/reviews" className="dm-sansFont text-a">Reviews</Link></Nav.Link>
+          <Nav.Link href="#contact"><Dropdown/></Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
                 </div>
             </div>
         </header>

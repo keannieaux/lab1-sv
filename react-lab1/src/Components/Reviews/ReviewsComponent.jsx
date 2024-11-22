@@ -8,7 +8,7 @@ function ReviewsComponent() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [currentItem, setCurrentItem] = useState(null);
     const [newItem, setNewItem] = useState({ author: '', job: '', image: '' });
-    const [nextId, setNextId] = useState(4); // Adjust the initial value based on the existing data
+    const [nextId, setNextId] = useState(4); 
 
     useEffect(() => {
         setItems(reviewsData);

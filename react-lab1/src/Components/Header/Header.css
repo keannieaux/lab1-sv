@@ -9,7 +9,10 @@
     display: flex;
     justify-content: center;
 }
-
+.mr-auto{
+    display: flex;
+    gap: 20px;
+}
 .header-nav{
     display: flex;
     gap: 40px;
